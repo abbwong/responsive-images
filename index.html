@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf & Pot</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   
+
+    <header>
+        <h1>Leaf & Pot</h1>
+    
+        <p>Houseplants and handmade pots for small spaces</p>
+    </header>
+
+
+    <main>
+        <section class="featured inner-container">
+            <div> 
+                <h2>Small Plants, Big Personality</h2>
+                <p>Succulents and cacti are the easiest way to bring some green into a small apartment. They need bright light, very little water, and almost no attention.</p>
+                <p>Every plant comes potted in a speckled concrete pot made by a local maker, so it's ready for your desk or windowsill the day you bring it home.</p>
+            </div>
+           <!-- art direction solution with picture element -->
+            <!-- the picture element takes a condition and one img tag -->
+             <!-- under 700px wide, this will load the original imag that is 500x333. -->
+              <!-- if over 700px  wide, this will swap out the attributes given into the image tag. -->
+            <picture>
+                <source media="(min-width: 700px)" srcset="img/plant-thumb.avif" width="294" height="333">
+              <img src="img/plant.avif" width="500" height="333" alt="A small succulent and a catus in concrete pots.">  
+            </picture>
+        </section>
+    </main>    
+    
+</body>
+</html>
